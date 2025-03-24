@@ -4,23 +4,19 @@
 
 1. Create a Class-based Component:
 
--   Create a new file named **UserProfileClass.jsx** in the `src/components` folder.
-
--   Create a class-based component named **UserProfileClass** that takes props to display a user's `name`, `age`, and `hobby`.
-
--   The component should display the props in a styled card format.
+    - Create a new file named **UserProfileClass.jsx** in the `src/components` folder.
+    - Create a class-based component named **UserProfileClass** that takes props to display a user's `name`, `age`, and `hobby`.
+    - The component should display the props in a styled card format.
 
 2. Create a Functional Component:
 
--   Create another file named **UserProfileFunction.jsx** in the `src/components` folder.
-
--   Create a functional component named **UserProfileFunction** that takes props to display a user's ``name`, `age`, and `hobby` in a similar format as the class-based component.
+    - Create another file named **UserProfileFunction.jsx** in the `src/components` folder.
+    - Create a functional component named **UserProfileFunction** that takes props to display a user's ``name`, `age`, and `hobby` in a similar format as the class-based component.
 
 3. Update the **App.jsx** to Use Both Components:
 
--   Import both components into **App.jsx**.
-
--   Pass the same props to both components and render them side by side to compare their outputs.
+    - Import both components into **App.jsx**.
+    - Pass the same props to both components and render them side by side to compare their outputs.
 
 ### Exercise 2: Dynamic List Rendering with Props
 
