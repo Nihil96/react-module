@@ -55,3 +55,26 @@ Create a simple Family Tree that displays a parent's name and passes down inform
     - Display the grandchild's name and favorite hobby.
 4. Pass props from the **Parent** component down to the **Child** and then from **Child** to **Grandchild**.
 5. Render the **Parent** component in **App.jsx**, and ensure the family tree information is passed down to the grandchildren. Here is the family object:
+
+Use the following object to create the family tree:
+
+```js
+const family = {
+    name: "John (Parent)",
+    children: [
+        {
+            name: "Alex (Child)",
+            age: 30,
+            grandchildren: [
+                { name: "Liam (Grandchild)", hobby: "Playing Soccer" },
+                { name: "Sophia (Grandchild)", hobby: "Drawing" },
+            ],
+        },
+        {
+            name: "Emma (Child)",
+            age: 28,
+            grandchildren: [{ name: "Noah (Grandchild)", hobby: "Reading" }],
+        },
+    ],
+}
+```
