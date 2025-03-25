@@ -11,7 +11,7 @@
 2. Create a Functional Component:
 
     - Create another file named **UserProfileFunction.jsx** in the `src/components` folder.
-    - Create a functional component named **UserProfileFunction** that takes props to display a user's ``name`, `age`, and `hobby` in a similar format as the class-based component.
+    - Create a functional component named **UserProfileFunction** that takes props to display a user's `name`, `age`, and `hobby` in a similar format as the class-based component.
 
 3. Update the **App.jsx** to Use Both Components:
 
