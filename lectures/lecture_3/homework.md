@@ -8,19 +8,19 @@ Create a simple User Status Dashboard that displays different content based on t
 
 **Requirements:**
 
-1. Components:
+1. **Components:**
     - App: The main component that holds the state for user status.
     - UserStatus: A component that displays different messages based on whether the user is logged in, logged out, or an admin.
     - AdminPanel: A component that displays admin-specific content.
     - Login: A component that prompts users to log in.
-2. State Management:
+2. **State Management:**
     - The App component should manage the following state:
         - isLoggedIn (boolean)
         - isAdmin (boolean)
-3. Functionality:
+3. **Functionality:**
     - Users can toggle their login status between logged in and logged out.
     - If logged in, users can toggle between admin and regular user roles.
-4. Conditional Rendering Logic:
+4. **Conditional Rendering Logic:**
     - If the user is logged out, render the Login component.
     - If the user is logged in as an admin, render the UserStatus component with a welcome message and the AdminPanel.
     - If the user is logged in as a regular user, render the UserStatus component with a welcome message but without the AdminPanel.
@@ -33,12 +33,13 @@ Create a Mood Tracker app where the user can select their current mood from a se
 
 **Components:**
 
-1. MoodSelector:
-   Contains buttons for different moods (e.g., Happy, Sad, Excited, Tired).
-   When a button is clicked, it updates the current mood in the parent component using useState.
+1. **MoodSelector:**
 
-2. MoodDisplay:
-   Receives the current mood as a prop and displays the mood text and an emoji that represents the mood.
+    - Contains buttons for different moods (e.g., Happy, Sad, Excited, Tired).
+    - When a button is clicked, it updates the current mood in the parent component using useState.
+
+2. **MoodDisplay:**
+    - Receives the current mood as a prop and displays the mood text and an emoji that represents the mood.
 
 **Requirements:**
 
@@ -69,16 +70,16 @@ You are provided with an array of books. Your task is to create two components: 
 
 **Requirements:**
 
-1. Components:
+1. **Components:**
     - `BookCard`: A functional component that displays the details of each book (title, author, genre, availability).
     - `BookLibrary`: The main component that holds the state for filtering and displays the list of BookCard components based on the selected filter.
-2. State Management:
+2. **State Management:**
     - The `BookLibrary` component should manage the following state:
         - filter: A string that determines whether to show all books or only available books.
-3. Buttons and Filtering Logic:
+3. **Buttons and Filtering Logic:**
     - All Books: A button that, when clicked, sets the `filter` state to "all", showing all books in the library.
     - Available Books: A button that, when clicked, sets the `filter` state to "available", showing only books that are marked as available `(available: true)`.
-4. The given array:
+4. **The given array:**
 
 ```js
 const books = [
