@@ -1,52 +1,24 @@
-import { Route, Routes } from "react-router-dom"
+// import { useState } from "react"
 import "./App.css"
-import Home from "./examples/lecture_7/pages/home"
-import About from "./examples/lecture_7/pages/about"
-import Contact from "./examples/lecture_7/pages/contact"
-import Navbar from "./examples/lecture_7/components/navbar"
-import Authetication from "./examples/lecture_7/pages/authetication"
-import { useState } from "react"
-import SignIn from "./examples/lecture_7/pages/signIn"
-import SignUp from "./examples/lecture_7/pages/signup"
-import ProtectedRoute from "./examples/lecture_7/components/protectedRoute"
-import Profile from "./examples/lecture_7/pages/profile"
-import User from "./examples/lecture_7/pages/user"
-import NotFound from "./examples/lecture_7/pages/notFound"
+import Header from "./examples/lecture_8/components/header"
+import ParentCounter from "./examples/lecture_8/components/parentCounter"
+import { CounterProvider } from "./examples/lecture_8/context/counterContext"
+import UserProvider from "./examples/lecture_8/context/userContext"
 
 function App() {
-  const [isSignedIn, setIsSignedIn] = useState(false)
+  // const [user] = useState({ name: "Michael", age: 30 })
 
   return (
     <>
-      <Navbar />
-      <Routes>
-        {/* Basic Routes */}
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        {/* Nested Routes */}
-        <Route path="/auth" element={<Authetication />}>
-          {/* Child Routes */}
-          <Route
-            path="signin"
-            element={
-              <SignIn isSignedIn={isSignedIn} setIsSignedIn={setIsSignedIn} />
-            }
-          />
-          <Route path="signup" element={<SignUp />} />
-        </Route>
-        {/* Protected Route */}
-        <Route
-          path="/profile"
-          element={
-            <ProtectedRoute isAutheticated={isSignedIn} element={<Profile />} />
-          }
-        />
-        {/* Dynamic Route */}
-        <Route path="user/:id" element={<User />} />
-        {/*Catch-all route for 404 */}
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      {/* Example 1 */}
+      {/* <UserProvider>
+        <Header />
+      </UserProvider> */}
+
+      {/* Example 2*/}
+      <CounterProvider>
+        <ParentCounter />
+      </CounterProvider>
     </>
   )
 }
