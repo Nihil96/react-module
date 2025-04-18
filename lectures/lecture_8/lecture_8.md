@@ -46,7 +46,7 @@ function UserProfile({ user }) {
 }
 ```
 
-In this example, the user state is passed down through the Header and NavBar components just to be used in UserProfile. This is a classic case of prop drilling, and it can become cumbersome as the application grows.
+In this example, the user state is passed down through the `Header` and `NavBar` components just to be used in `UserProfile`. This is a classic case of prop drilling, and it can become cumbersome as the application grows.
 
 ### What is Context API?
 
