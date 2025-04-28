@@ -1,35 +1,24 @@
-// import { useState } from "react"
-import "./App.css"
-import PostsDetails from "./examples/lecture_9/components/postsDetail"
-import UsersDetails from "./examples/lecture_9/components/usersDetail"
-import calculateAverage from "./examples/lecture_9/helpers/calculateAverage"
-import { useAverage } from "./examples/lecture_9/hooks/useAverage"
-import useCounter from "./examples/lecture_9/hooks/useCounter"
-import WindowSizeDisplay from "./exercises/exercise_2/components/windowSizeDisplay"
+import "./App.css";
+import Auth from "./examples/lecture_10/components/auth";
+import Counter from "./examples/lecture_10/components/counter";
+import Cart from "./exercises/exercise_4/components/cart";
+import ProductList from "./exercises/exercise_4/components/productList";
 
 function App() {
-  const { counter, increment } = useCounter(0)
-  const average = useAverage([1, 2, 3, 4, 5])
-  const averageNumber = calculateAverage([1, 2, 3, 4, 5])
-
   return (
     <>
       {/* Example 1 */}
-      {/* <UsersDetails /> */}
-      {/* <PostsDetails /> */}
+      {/* <Counter /> */}
 
       {/* Example 2 */}
-      {/* <p>Counter: {counter}</p>
-      <button onClick={increment}>Increment the counter</button> */}
+      {/* <Auth /> */}
 
-      {/* Example 3 */}
-      {/* <h2>Average: {average} - result from the custom hook</h2>
-      <h2>Average: {averageNumber} - result from the helper function</h2> */}
-
-      {/*Exercise 1*/}
-      <WindowSizeDisplay />
+      {/* Exercise 4 */}
+      <h2>Shoping Cart with Redux</h2>
+      <ProductList />
+      <Cart />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
